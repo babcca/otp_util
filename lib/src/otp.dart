@@ -54,7 +54,7 @@ abstract class OTP {
   /// All parameters are mandatory however [algorithm] have
   /// a default value, so can be ignored.
   ///
-  String generateOTP({int? input, OTPAlgorithm algorithm = OTPAlgorithm.SHA1}) {
+  String generateOTP({int? input}) {
     /// base32 decode the secret
     var hmacKey = base32.decode(this.secret!);
 
