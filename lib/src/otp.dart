@@ -51,8 +51,7 @@ abstract class OTP {
   /// function, it will generate the OTP object with params,
   /// the params may be counter or time.
   ///
-  /// All parameters are mandatory however [algorithm] have
-  /// a default value, so can be ignored.
+  /// All parameters are mandatory.
   ///
   String generateOTP({int? input}) {
     /// base32 decode the secret
